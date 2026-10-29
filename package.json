@@ -1,0 +1,22 @@
+{
+  "name": "react-email-starter",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "build": "email build",
+    "dev": "CHOKIDAR_USEPOLLING=1 CHOKIDAR_INTERVAL=1000 email dev",
+    "export": "npm run export:html && npm run export:text",
+    "export:html": "email export --dir emails --outDir out/html",
+    "export:text": "email export --dir emails --outDir out/text --plainText"
+  },
+  "dependencies": {
+    "react-email": "6.11.5",
+    "react-dom": "19.2.4",
+    "react": "19.2.4"
+  },
+  "devDependencies": {
+    "@react-email/ui": "6.11.5",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
+  }
+}
