@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Body, Container, Font, Head, Html, Link } from "react-email";
 
 import buttonCss from "./urls-button.css?inline";
+import layoutCss from "./urls-layout.css?inline";
 import dlCss from "./urls-dl.css?inline";
 import emailCss from "./urls-email.css?inline";
 import linkCss from "./urls-link.css?inline";
@@ -32,7 +33,9 @@ export default function UrlsLayout({ children }: { children: ReactNode }) {
   return (
     <Html lang="en">
       <Head>
-        <style>{[buttonCss, dlCss, emailCss, linkCss, otpCss, textCss].join("\n")}</style>
+        <meta name="color-scheme" content="light dark" />
+        <meta name="supported-color-schemes" content="light dark" />
+        <style>{[layoutCss, buttonCss, dlCss, emailCss, linkCss, otpCss, textCss].join("\n")}</style>
         <Font
           fontFamily="Noto Sans"
           fallbackFontFamily="sans-serif"
@@ -74,7 +77,7 @@ export default function UrlsLayout({ children }: { children: ReactNode }) {
           fontStyle="normal"
         />
       </Head>
-      <Body style={body}>
+      <Body className="urls-layout" style={body}>
         <Container style={container}>
           <Link style={logo} href="https://url.space">
             ~

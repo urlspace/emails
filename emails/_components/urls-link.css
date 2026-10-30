@@ -1,3 +1,9 @@
 .urls-link {
   color: #4d57b7 !important;
 }
+
+@media (prefers-color-scheme: dark) {
+  .urls-link {
+    color: #c1c1fa !important;
+  }
+}
