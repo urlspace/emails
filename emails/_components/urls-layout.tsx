@@ -1,6 +1,13 @@
 import type { ReactNode } from "react";
 import { Body, Container, Font, Head, Html, Link } from "react-email";
 
+import buttonCss from "./urls-button.css?inline";
+import dlCss from "./urls-dl.css?inline";
+import emailCss from "./urls-email.css?inline";
+import linkCss from "./urls-link.css?inline";
+import otpCss from "./urls-otp.css?inline";
+import textCss from "./urls-text.css?inline";
+
 const body = {
   fontFamily: '"Noto Sans", sans-serif',
   fontSize: "16px",
@@ -21,10 +28,11 @@ const logo = {
   display: "inline-block",
 };
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function UrlsLayout({ children }: { children: ReactNode }) {
   return (
     <Html lang="en">
       <Head>
+        <style>{[buttonCss, dlCss, emailCss, linkCss, otpCss, textCss].join("\n")}</style>
         <Font
           fontFamily="Noto Sans"
           fallbackFontFamily="sans-serif"

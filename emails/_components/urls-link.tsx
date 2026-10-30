@@ -7,7 +7,7 @@ interface UrlsLinkProps {
 
 export default function UrlsLink({ href, children }: UrlsLinkProps) {
   return (
-    <Link href={href} style={{ color: "#4d57b7" }}>
+    <Link href={href} className="urls-link">
       {children}
     </Link>
   );

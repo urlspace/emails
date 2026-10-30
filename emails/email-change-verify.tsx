@@ -1,5 +1,5 @@
 import UrlsText from "./_components/urls-text";
-import Layout from "./_components/layout";
+import UrlsLayout from "./_components/urls-layout";
 import UrlsOtp from "./_components/urls-otp";
 
 interface EmailChangeVerifyProps {
@@ -8,7 +8,7 @@ interface EmailChangeVerifyProps {
 
 export default function EmailChangeVerify({ Code = "{{.Code}}" }: EmailChangeVerifyProps) {
   return (
-    <Layout>
+    <UrlsLayout>
       <UrlsText>
         You requested to change the email address for your <strong style={{ fontWeight: 700 }}>url.space</strong> account. Enter this code to
         confirm the change:
@@ -18,7 +18,7 @@ export default function EmailChangeVerify({ Code = "{{.Code}}" }: EmailChangeVer
         This code expires in 15 minutes. If you didn't request this change, you can ignore this
         email.
       </UrlsText>
-    </Layout>
+    </UrlsLayout>
   );
 }
 

@@ -1,24 +1,24 @@
+import type { ReactNode } from "react";
 import { Column, Row, Section, Text } from "react-email";
 
 interface UrlsDlProps {
-  items: { term: string; value: string }[];
+  items: { term: string; value: ReactNode }[];
 }
-
-const cssterm = { fontSize: "13px", opacity: ".5", margin: "0" };
-const cssvalue = { fontSize: "16px", fontWeight: "700", margin: "0" };
 
 export default function UrlsDl({ items }: UrlsDlProps) {
   return (
-    <Section style={{ paddingBottom: "28px" }}>
+    <Section tdClassName="urls-dl-section">
       {items.map(({ term, value }, index) => (
         <Row key={index}>
           <Column
-            style={{
-              paddingBottom: index === items.length - 1 ? "0px" : "7px",
-            }}
+            className={
+              index === items.length - 1
+                ? "urls-dl-item urls-dl-item-last"
+                : "urls-dl-item"
+            }
           >
-            <Text style={cssterm}>{term}</Text>
-            <Text style={cssvalue}>{value}</Text>
+            <Text className="urls-dl-term">{term}</Text>
+            <Text className="urls-dl-value">{value}</Text>
           </Column>
         </Row>
       ))}

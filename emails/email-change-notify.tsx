@@ -1,6 +1,6 @@
 import UrlsLink from "./_components/urls-link";
 import UrlsText from "./_components/urls-text";
-import Layout from "./_components/layout";
+import UrlsLayout from "./_components/urls-layout";
 
 interface EmailChangeNotifyProps {
   NewEmail?: string;
@@ -8,7 +8,7 @@ interface EmailChangeNotifyProps {
 
 export default function EmailChangeNotify({ NewEmail = "{{.NewEmail}}" }: EmailChangeNotifyProps) {
   return (
-    <Layout>
+    <UrlsLayout>
       <UrlsText>
         The email address for your <strong style={{ fontWeight: 700 }}>url.space</strong> account was changed to{" "}
         <strong style={{ fontWeight: 700 }}>{NewEmail}</strong>.
@@ -17,7 +17,7 @@ export default function EmailChangeNotify({ NewEmail = "{{.NewEmail}}" }: EmailC
         If you didn't make this change, contact us immediately at{" "}
         <UrlsLink href="mailto:mail@url.space">mail@url.space</UrlsLink>.
       </UrlsText>
-    </Layout>
+    </UrlsLayout>
   );
 }
 

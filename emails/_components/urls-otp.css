@@ -1,0 +1,14 @@
+.urls-otp-section {
+  margin: 0 0 28px;
+}
+
+.urls-otp-text {
+  background-color: #f5f5f5;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 18px !important;
+  padding: 7px 14px;
+  letter-spacing: 4px;
+  font-family: monospace !important;
+  white-space: nowrap;
+}

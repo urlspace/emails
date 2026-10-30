@@ -1,0 +1,23 @@
+.urls-dl-section {
+  padding-bottom: 28px;
+}
+
+.urls-dl-item {
+  padding-bottom: 7px;
+}
+
+.urls-dl-item-last {
+  padding-bottom: 0;
+}
+
+.urls-dl-term {
+  font-size: 13px !important;
+  opacity: 0.5;
+  margin: 0 !important;
+}
+
+.urls-dl-value {
+  font-size: 16px !important;
+  font-weight: 700;
+  margin: 0 !important;
+}

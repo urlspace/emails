@@ -1,4 +1,5 @@
-import Layout from "./_components/layout";
+import UrlsLayout from "./_components/urls-layout";
+import UrlsEmail from "./_components/urls-email";
 import UrlsDl from "./_components/urls-dl";
 import UrlsText from "./_components/urls-text";
 
@@ -12,15 +13,15 @@ export default function AdminNewUser({
   Email = "{{.Email}}",
 }: AdminNewUserProps) {
   return (
-    <Layout>
+    <UrlsLayout>
       <UrlsText>A new user verified their email on <strong style={{ fontWeight: 700 }}>url.space</strong>.</UrlsText>
       <UrlsDl
         items={[
           { term: "Username", value: Username },
-          { term: "Email", value: Email },
+          { term: "Email", value: <UrlsEmail email={Email} /> },
         ]}
       />
-    </Layout>
+    </UrlsLayout>
   );
 }
 

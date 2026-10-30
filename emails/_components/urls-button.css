@@ -1,0 +1,11 @@
+.urls-button {
+  display: inline-block;
+  background-color: #4d57b7;
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
