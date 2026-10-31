@@ -1,11 +1,11 @@
 .urls-layout {
-  background-color: #fefbf8 !important;
-  color: #181a24 !important;
+  background-color: #fefbf8;
+  color: #181a24;
 }
 
 @media (prefers-color-scheme: dark) {
   .urls-layout {
-    background-color: #0f0f13 !important;
-    color: #e4e4ea !important;
+    background-color: #0f0f13;
+    color: #e4e4ea;
   }
 }

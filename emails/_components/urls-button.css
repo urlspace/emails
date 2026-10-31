@@ -1,18 +1,18 @@
 .urls-button {
   display: inline-block;
-  background-color: #4d57b7 !important;
+  background-color: #4d57b7;
   color: #fefbf8 !important;
   font-weight: 500;
   padding: 7px 14px;
   border-radius: 4px;
-  text-decoration: none !important;
+  text-decoration: none;
   margin-bottom: 28px;
   font-size: 15px;
 }
 
 @media (prefers-color-scheme: dark) {
   .urls-button {
-    background-color: #c1c1fa !important;
+    background-color: #c1c1fa;
     color: #0f0f13 !important;
   }
 }
