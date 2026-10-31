@@ -3,8 +3,7 @@
 }
 
 .urls-otp-text {
-  background-color: #c1c1fa;
-  color: #181a24;
+  background-color: #eee;
   display: inline-block;
   border-radius: 4px;
   font-size: 18px !important;
@@ -16,7 +15,6 @@
 
 @media (prefers-color-scheme: dark) {
   .urls-otp-text {
-    background-color: #4d57b7;
-    color: #e4e4ea;
+    background-color: #333;
   }
 }
