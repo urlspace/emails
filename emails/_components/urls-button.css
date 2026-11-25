@@ -2,12 +2,10 @@
   display: inline-block;
   background-color: #4d57b7;
   color: #fefbf8 !important;
-  font-weight: 500;
   padding: 7px 14px;
   border-radius: 4px;
   text-decoration: none;
   margin-bottom: 28px;
-  font-size: 15px;
 }
 
 @media (prefers-color-scheme: dark) {

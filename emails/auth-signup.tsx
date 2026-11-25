@@ -17,7 +17,10 @@ export default function AuthSignup({
 }: AuthSignupProps) {
   return (
     <UrlsLayout>
-      <UrlsText>Welcome to <strong style={{ fontWeight: 700 }}>url.space</strong>! Verify your email address to get started.</UrlsText>
+      <UrlsText>
+        Welcome to <strong style={{ fontWeight: 700 }}>url.space</strong>! Verify your email address
+        to get started. This link will expire in 24 hours.
+      </UrlsText>
       <UrlsDl
         items={[
           { term: "Username", value: Username },
@@ -25,7 +28,6 @@ export default function AuthSignup({
         ]}
       />
       <UrlsButton href={Url}>Verify your email address</UrlsButton>
-      <UrlsText>This link will expire in 24 hours.</UrlsText>
     </UrlsLayout>
   );
 }
